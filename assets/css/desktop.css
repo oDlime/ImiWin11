@@ -1,7 +1,7 @@
 html,body{
     margin: 0px;
     padding: 0px;
-    /* overflow: hidden; */
+    overflow: hidden;
     background-image: url(/assets/img/wallpapers/wallpaper1.png);
     background-size: 100vw;
 }
