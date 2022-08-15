@@ -14,6 +14,7 @@ html,body{
     height: 4.6vh;
     border-top: 1px solid #414345;
     text-align: center;
+    z-index: 100;
 }
 .window{
     background-color: rgba(30, 30, 30,.7);
@@ -28,6 +29,7 @@ html,body{
     background-position-x: 50%;
     background-position-y: 50%;
     background-repeat: no-repeat;
+    transition: .1s;
 }
 .taskitem:hover{
     background-color: rgba(70, 70, 70, 0.6);
@@ -84,4 +86,184 @@ html,body{
 }
 .tasktool .line:hover{
     border-right: solid rgba(255, 255, 255, .6) 1px;
+}
+#menu{
+    width: 60vh;
+    height: 68vh;
+    margin: -0vh auto;
+    border-radius: 1vh;
+    background-color: rgba(30, 30, 30,.8);
+    transition: .15s;
+    z-index: 90;
+    border: 1px solid #414345;
+    color: white;
+}
+#search{
+    height: 12%;
+}
+#guding{
+    height: 43%;
+    width: 90%;
+    margin: 0px auto;
+    /* background-color: burlywood; */
+}
+#tuijian{
+    height: 37%;
+    width:90%;
+    margin: 0px auto;
+    /* background-color: aliceblue; */
+}
+#guanji{
+    height: 8%;
+    background-color: rgba(0, 0, 0, .1);
+}
+#search div{
+    background-color: rgba(0, 0, 0, .2);
+    height: 45%;
+    width: 90%;
+    margin: 0px auto;
+    position: relative;
+    top: 40%;
+    border-radius: 5px;
+    border-top: 1px solid #414345;
+    border-right: 1px solid #414345;
+    border-left : 1px solid #414345;
+    border-bottom: 2px solid rgb(244, 103, 98);
+}
+#search div img{
+    position: absolute;
+    top: 20%;
+    left: 3%;
+}
+#search div span{
+    color: rgba(200, 200, 200, 1);
+    font-size: 40%;
+    position: absolute;
+    top: 26%;
+    left: 9%;
+}
+.guding .title{
+    height: 20%;
+}
+.guding .title>span{
+    font-size: 15px;
+    position: relative;
+    top: 40%;
+    left: 7%;
+}
+.guding .title div{
+    display: inline-block;
+    position: relative;
+    height: 42%;
+    width: 16%;
+    top: 40%;
+    right: -70%;
+    font-size: 1px;
+    font-weight: 100;
+    background-color: rgba(100, 100, 100, .3);
+    line-height: 50%;
+    border-radius: 5px;
+}
+.guding .title div span{
+    position: relative;
+    left: 10px;
+}
+.guding .title div img{
+    position: relative;
+    left: 9px;
+    top: 3px;
+}
+.guding .items{
+    height: 80%;
+}
+.guding .items .item1{
+    background-image: url(/assets/img/icon/NotepadAppList.targetsize-64.png);
+}
+.guding .items>div{
+    display: inline-block;
+    width: 15.7%;
+    height: 33.3%;
+    border-radius: 7px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 50% 10px;
+}
+.guding .items span {
+    position: relative;
+    bottom: -55%;
+    font-size: 10px;
+}
+.winbtnhover:hover{
+    background-color: rgba(70, 70, 70, 0.6);
+}
+#tuijian .title div{
+    width: 10%;
+    position:relative;
+    right: -66%;
+}
+#tuijian .title span{
+    left: 10%;
+}
+#tuijian .items{
+    /* background-color: antiquewhite; */
+    
+}
+#tuijian .items>div{
+    width: 45%;
+    background-size: 15%;
+    background-position: 10%;
+}
+#tuijian .items div span{
+}
+#tuijian .items div span:first-child{
+    bottom: -20%;
+    left: -3%;
+    color: white;
+    font-size: 15px;
+}
+#tuijian .items div span:last-child{
+    color: rgba(200, 200, 200, 1);
+    left: -25%;
+    bottom: -45%;
+}
+#guanji .content{
+    width: 90%;
+    height: 100%;
+    /* background-color: aliceblue; */
+    margin: 0px auto;
+}
+#guanji .content .user{
+    width: 17%;
+    height: 64%;
+    border-radius: 5px;
+    position: relative;
+    top: 17%;
+}
+#guanji .content .user .userimg{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    position: relative;
+    background-image: url(/assets/img/icon/User.ico);
+    background-size: cover;
+    top: 5px;
+    left: 5px;
+}
+#guanji .content .user span{
+    font-size: 10px;
+    margin-left: 5px;
+}
+#guanji .content .guanjibtn{
+    width: 34px;
+    height: 34px;
+    position: relative;
+    left: 90%;
+    top: -47%;
+    border-radius: 7px;
+    background-image: url(/assets/img/icon/guanji.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 40%;
 }
